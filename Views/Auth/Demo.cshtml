@@ -1,7 +1,59 @@
 ﻿@page
 @model AuthUsers
+@{
+    Layout = null; // Use no layout
+}
 
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-<div>
+<!-- Inline CSS to style the page -->
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e0f7fa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 30px 50px;
+        text-align: center;
+        position: relative;
+    }
+
+        .container p {
+            font-size: 22px;
+            color: #00796b;
+            margin: 20px 0 10px;
+        }
+
+        .container .icon {
+            font-size: 50px;
+            color: #4caf50;
+        }
+
+    .sticker {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 60px;
+        height: 60px;
+        background-image: url('https://example.com/success-sticker.png'); /* Replace with your sticker URL */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<div class="container">
+    <div class="sticker"></div> <!-- Decorative Sticker -->
+    <i class="fas fa-check-circle icon"></i> <!-- Font Awesome Icon -->
     <p>You are successfully logged in.</p>
 </div>

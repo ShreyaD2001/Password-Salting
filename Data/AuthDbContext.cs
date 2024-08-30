@@ -9,9 +9,7 @@ namespace AuthUser.Data
             : base(options)
         {
         }
-
         public DbSet<AuthUsers> AuthUsers { get; set; }
-
         // Other DbSets and configurations
     }
 }

@@ -38,7 +38,7 @@ namespace AuthUser.Controllers
                 {
                     HttpContext.Session.SetString("UserEmail", model.Email);
 
-                    // Redirecting to dashboard based on user role
+                    // Redirect to respective dashboard based on user role
                     if (user.Role == "Employee")
                     {
                         return RedirectToAction("Demo", "Auth");
@@ -111,7 +111,7 @@ namespace AuthUser.Controllers
             }
             else
             {
-                // Generating a salt
+                // Generate a salt
                 model.Salt = GenerateSalt();
 
                 // Hash the password with the salt
@@ -127,8 +127,8 @@ namespace AuthUser.Controllers
         }
         public IActionResult Demo()
         {
-/*            return RedirectToAction("Demo", "Auth");
-*/            return View();
+           
+            return View();
         }
 
 

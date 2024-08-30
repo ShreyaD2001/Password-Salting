@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using AuthUser.Models;
 
 namespace AuthUser.Models
 {
@@ -34,4 +35,3 @@ namespace AuthUser.Models
         }
     }
 }
-
